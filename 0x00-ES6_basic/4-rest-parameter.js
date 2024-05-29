@@ -1,3 +1,3 @@
-export default function returnHowManyArguments(func) {
+export default function returnHowManyArguments(..func) {
   return func.length;
 }
