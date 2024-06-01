@@ -1,5 +1,5 @@
 export default function getResponseFromAPI(success) {
-    return new Promise(() => {
+    return new Promise((resolve, reject) => {
         if (success === true){
             resolve({
                 status: 200,
