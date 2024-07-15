@@ -1,10 +1,11 @@
-import initializeRooms from './1-make_classrooms.js';
+import Classroom from './0-classroom';
+
 function initializeRooms() {
-    return [
-        ClassRoom { _maxStudentsSize: 19 },
-        ClassRoom { _maxStudentsSize: 20 },
-        ClassRoom { _maxStudentsSize: 34 },
-      ];
-    
+  return [
+    new Classroom(19),
+    new Classroom(20),
+    new Classroom(34),
+  ];
 }
+
 export default initializeRooms;
